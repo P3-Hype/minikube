@@ -33,3 +33,33 @@ variable "container_name" {
   type = list(string)
   default = []
 }
+
+variable "github_username" {
+  description = "Github username"
+  type = string
+  default = ""
+}
+
+variable "github_token" {
+  description = "Github token"
+  type = string
+  default = ""
+}
+
+variable "service_port" {
+  description = "Service port"
+  type = number
+  default = 80
+}
+
+variable "container_port" {
+  description = "Container port"
+  type = number
+  default = 80
+}
+
+variable "node_port" {
+  description = "Node port"
+  type = number
+  default = 30000
+}
